@@ -68,3 +68,15 @@ function filterLargeTransactions(transactions,filterFunction) {
 };
 
 filterLargeTransactions(transactions, amount => amount > 1000);
+
+//Task 7 - Closures
+function createCartTracker() {
+    let cartTotal = 0
+    return function (item) {
+        cartTotal += item
+    return (cartTotal) //Function that keeps adding to cart
+}}
+
+let cart = createCartTracker();
+console.log("Total Cart Value:", "$" + cart(20)); 
+console.log("Total Cart Value:", "$" + cart(35)); 
