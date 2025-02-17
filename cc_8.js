@@ -6,3 +6,12 @@ function calculateSalary(baseSalary, bonus, taxRate) {
 
 calculateSalary(5000, 500, 0.1); 
 calculateSalary(7000, 1000, 0.15); 
+
+//Task 2 - Function Expression 
+const calculateDiscount = function (price, discountRate) {
+    let finalPrice = price - (price * discountRate) //Formula for the function
+    console.log("Final Price:", "$" + finalPrice) //Logging the final price 
+}
+
+calculateDiscount(100, 0.2); 
+calculateDiscount(250, 0.15); 
